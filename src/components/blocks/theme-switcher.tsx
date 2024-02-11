@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import Image from 'next/image';
 import { CircleIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
 export default function ThemeSwitch() {
@@ -11,16 +10,23 @@ export default function ThemeSwitch() {
 
   useEffect(() => setMounted(true), []);
 
-  if (!mounted)
-    return (
-    <CircleIcon className='h-5 w-5'/>
-    );
+  if (!mounted) return <CircleIcon className='h-5 w-5' />;
 
   if (resolvedTheme === 'dark') {
-    return <SunIcon className='h-5 w-5' onClick={() => setTheme('light')} />;
+    return (
+      <SunIcon
+        className='h-5 w-5 hover:text-primary transition-colors duration-300'
+        onClick={() => setTheme('light')}
+      />
+    );
   }
 
   if (resolvedTheme === 'light') {
-    return <MoonIcon className='h-5 w-5' onClick={() => setTheme('dark')} />;
+    return (
+      <MoonIcon
+        className='h-5 w-5 hover:text-primary transition-colors duration-300'
+        onClick={() => setTheme('dark')}
+      />
+    );
   }
 }
