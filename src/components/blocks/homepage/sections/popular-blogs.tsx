@@ -20,7 +20,7 @@ export const PopularBlogs = () => {
             <p>See all</p>
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 divide-y sm:divide-y-0'>
           <PreviewArticle />
           <PreviewArticle />
           <PreviewArticle />

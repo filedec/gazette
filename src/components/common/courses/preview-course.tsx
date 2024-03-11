@@ -1,14 +1,14 @@
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui';
+import { Avatar, AvatarFallback, AvatarImage, Button } from '@/components/ui';
 import {
   BookmarkIcon,
   DotsVerticalIcon,
   PlusCircledIcon,
   Share2Icon,
 } from '@radix-ui/react-icons';
-export const PreviewArticle = () => {
+export const PreviewCourse = () => {
   return (
-    <div id='article-preview' className='w-full md:max-w-lg py-4'>
+    <div id='course-preview' className='w-full md:max-w-lg py-4 '>
       <div className='flex flex-col gap-3'>
         <div className='flex gap-4 items-center'>
           <time
@@ -20,16 +20,29 @@ export const PreviewArticle = () => {
             <p className='text-xs'>Technology</p>
           </div>
         </div>
-        <div className='flex gap-4 items-center'>
-          <div className='h-24 w-24 aspect-square bg-accent'></div>
+        <div className='flex flex-col gap-4 items-start'>
+          <div className='h-40 w-full aspect-square bg-accent relative'>
+            <div className='absolute top-0 left-0 p-2'>
+              <p className='font-medium text-sm flex items-center gap-2 text-emerald-500/80 dark:text-emerald-600/80 px-3 py-0.5 bg-emerald-100/50 dark:bg-emerald-900/40 rounded-full border border-emerald-400/50 dark:border-emerald-600/40'>
+                20% off
+              </p>
+            </div>
+          </div>
           <div className='space-y-1'>
             <h2 className='text-xl'>
               Design by AI: The Fast-Food of the Future
             </h2>
-            <p className='w-full text-wrap text-muted-foreground line-clamp-2'>
-              AI is going to reduce the demand for designers. Which areas will
-              be affected? Which will survive?
-            </p>
+          </div>
+        </div>
+        <div className='flex gap-2 items-baseline'>
+          <p className='text-lg text-emerald-500'>NPR 3000</p>
+          <p className='text-sm text-amber-500 line-through'> NPR 3500</p>
+        </div>
+        <div className=' flex gap-4 items-end flex-wrap'>
+          <Button className='text-base'> Enroll Now</Button>
+          <div className=''>
+            <p className='text-muted-foreground'>Starts 15 March 2020</p>
+            <p className='text-xs text-amber-500'>Inclusive of taxes *</p>
           </div>
         </div>
         <div className='flex items-center gap-2 sm:gap-4 text-muted-foreground w-full'>
@@ -43,7 +56,7 @@ export const PreviewArticle = () => {
             </Avatar>
             <PlusCircledIcon className='h-5 w-5 group-hover:text-emerald-500 duration-200' />
           </div>
-          <p className='text-sm'>2 min read</p>
+          <p className='text-sm'>1-3 Months</p>
           <div className='flex gap-4 ml-auto'>
             <BookmarkIcon className='h-5 w-5' />
             <Share2Icon className='h-5 w-5' />

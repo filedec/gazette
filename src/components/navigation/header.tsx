@@ -31,7 +31,7 @@ export function Header() {
           <ThemeSwitch />
           <Link
             href={'/newsletter'}
-            className='whitespace-nowrap text-white select-none h-10 text-base hover:text-white/80 ease-in-out duration-200 border px-5 py-2 bg-primary hover:bg-primary/90 rounded-md'>
+            className='whitespace-nowrap text-background select-none h-10 text-base hover:text-background/80 ease-in-out duration-200 border px-5 py-2 bg-primary hover:bg-primary/90 rounded-md'>
             Join Waitlist
           </Link>
         </div>
