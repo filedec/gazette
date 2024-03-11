@@ -9,41 +9,33 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  Input,
 } from '@/components/ui';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-import ThemeSwitch from '../blocks/theme-switcher';
+import { ThemeSwitch } from '@/components/common';
+import { MobileLogo } from '@/assets/jsx/mobile-logo';
 
 export function Header() {
   return (
-    <header className='fixed top-0 w-full text-foreground z-50 backdrop-blur-sm'>
-      <div className='max-w-screen-2xl text-lg mx-auto flex justify-between items-center p-5'>
+    <header className='fixed top-0 w-full text-foreground font-light z-50 backdrop-blur-sm bg-background/80'>
+      <div className='container text-lg flex justify-between items-center h-16 gap-8'>
         <Link href={'/'}>
-          <Logo className='h-10 [&>path]:fill-primary transition-colors duration-300' />
+          <Logo className='h-8 [&>path]:fill-primary transition-colors duration-300 hidden sm:block' />
+          <MobileLogo className='h-8 [&>path]:fill-primary transition-colors duration-300 sm:hidden' />
         </Link>
-        <div className='hidden md:flex gap-6 items-center'>
-          <Link
-            href={'/docs'}
-            className=' hover:text-primary ease-in-out duration-300'>
-            Features
-          </Link>
-          <Link
-            href={'/'}
-            className=' hover:text-primary ease-in-out duration-300'>
-            About us
-          </Link>
-          <Link
-            href={'/contact'}
-            className=' hover:text-primary ease-in-out duration-300'>
-            Documentation
-          </Link>
+        <Input
+          placeholder='Search Courses, Blogs, Communities and more..'
+          className='truncate w-full max-w-md h-10 px-4 rounded-full text-center'
+        />
+        <div className='hidden sm:flex gap-6 items-center ml-auto lg:ml-0'>
           <ThemeSwitch />
           <Link
-            href={'/lightpaper'}
-            className=' text-white select-none hover:text-white/80 ease-in-out duration-300 border px-3 py-2 bg-primary hover:bg-primary/90 rounded-md'>
+            href={'/newsletter'}
+            className='whitespace-nowrap text-white select-none h-10 text-base hover:text-white/80 ease-in-out duration-200 border px-5 py-2 bg-primary hover:bg-primary/90 rounded-md'>
             Join Waitlist
           </Link>
         </div>
-        <div className='flex md:hidden'>
+        <div className='flex lg:hidden'>
           <DropdownMenu>
             <DropdownMenuTrigger className='focus:border-0 focus:outline-none focus:ring-0 focus:ring-transparent'>
               <HamburgerMenuIcon className='h-8 w-8 hover:text-white transition-colors duration-300' />

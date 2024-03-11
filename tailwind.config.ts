@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily:{
+        display:'var(--font-nanum)',
+        brico:'var(--font-syne)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
