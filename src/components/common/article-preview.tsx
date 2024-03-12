@@ -34,7 +34,7 @@ export const ArticlePreview = ({
           </h2>
           <p
             className={cn(
-              'text-lg text-muted-foreground mt-4 line-clamp-4 lg:line-clamp-6',
+              'text-lg text-muted-foreground mt-4 line-clamp-4 lg:line-clamp-6 font-light',
               size === 'sm' && 'mt-1 text-base line-clamp-2 lg:line-clamp-3'
             )}>
             Libero neque aenean tincidunt nec consequat tempor. Viverra odio id

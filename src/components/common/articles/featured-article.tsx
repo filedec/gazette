@@ -26,7 +26,7 @@ export const FeaturedArticle = () => {
           <h2 className='text-3xl sm:text-4xl font-bold'>
             UX/UI Design Trends Going Into 2024
           </h2>
-          <p className='line-clamp-3 md:text-lg text-muted-foreground'>
+          <p className='line-clamp-3 md:text-lg text-muted-foreground font-light'>
             Every year, we have a line up of new design trends that not only
             look good, but also stick around and influence other designers to
             “steal” the trend. Love it or hate it, there are actually some

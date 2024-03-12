@@ -1,10 +1,8 @@
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui';
 import {
-  BookmarkIcon,
   DotsVerticalIcon,
   HeartIcon,
-  PlusCircledIcon,
   Share2Icon,
 } from '@radix-ui/react-icons';
 
@@ -25,9 +23,10 @@ export const CommunityPreview = () => {
         <div className='flex gap-4 items-center'>
           <div className='space-y-1'>
             <h2 className='text-xl'>
-              Design by AI: The Fast-Food of the Future
+              Oppenheimer wins the Best Picture Oscar at 96th Academy Awards,
+              totaling 7 wins
             </h2>
-            <p className='w-full text-wrap text-muted-foreground line-clamp-2'>
+            <p className='w-full text-wrap text-muted-foreground line-clamp-2 font-light'>
               AI is going to reduce the demand for designers. Which areas will
               be affected? Which will survive?
             </p>

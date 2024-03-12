@@ -26,7 +26,7 @@ export const PreviewArticle = () => {
             <h2 className='text-xl'>
               Design by AI: The Fast-Food of the Future
             </h2>
-            <p className='w-full text-wrap text-muted-foreground line-clamp-2'>
+            <p className='w-full text-wrap text-muted-foreground line-clamp-2 font-light'>
               AI is going to reduce the demand for designers. Which areas will
               be affected? Which will survive?
             </p>

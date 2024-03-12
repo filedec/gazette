@@ -1,7 +1,5 @@
 'use client';
-import { Input, ScrollArea, ScrollBar } from '@/components/ui';
-import { readtime } from '@/lib/utils';
-import Image from 'next/image';
+import { ScrollArea, ScrollBar } from '@/components/ui';
 import Link from 'next/link';
 import React from 'react';
 
