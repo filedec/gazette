@@ -8,7 +8,7 @@ import {
 } from '@radix-ui/react-icons';
 export const PreviewArticle = () => {
   return (
-    <div id='article-preview' className='w-full md:max-w-lg py-4'>
+    <div id='article-preview' className='w-full py-4'>
       <div className='flex flex-col gap-3'>
         <div className='flex gap-4 items-center'>
           <time
@@ -23,12 +23,16 @@ export const PreviewArticle = () => {
         <div className='flex gap-4 items-center'>
           <div className='h-24 w-24 aspect-square bg-accent'></div>
           <div className='space-y-1'>
-            <h2 className='text-xl'>
+            <h2 className='text-lg md:text-xl line-clamp-2 md:line-clamp-1 leading-[1.25] md:leading-normal'>
               Design by AI: The Fast-Food of the Future
             </h2>
-            <p className='w-full text-wrap text-muted-foreground line-clamp-2 font-light'>
-              AI is going to reduce the demand for designers. Which areas will
-              be affected? Which will survive?
+            <p className='w-full text-sm md:text-base text-wrap text-muted-foreground line-clamp-3 font-light leading-[1.25] md:leading-normal'>
+              Every year, we have a line up of new design trends that not only
+              look good, but also stick around and influence other designers to
+              “steal” the trend. Love it or hate it, there are actually some
+              design waves that are smart and functional. These functions could
+              range from including more information in less space, to build more
+              engagement with the users.
             </p>
           </div>
         </div>

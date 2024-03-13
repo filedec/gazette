@@ -10,8 +10,8 @@ import { HiSparkles } from 'react-icons/hi2';
 
 export const FeaturedArticle = () => {
   return (
-    <div id='featured_article' className='w-full'>
-      <div id='article_description' className='py-4 space-y-2'>
+    <div id='featured_article' className='w-full py-4'>
+      <div id='article_description' className='mb-4 space-y-2'>
         <div className='flex gap-4 items-center'>
           <time
             dateTime='2020-03-16'
@@ -23,7 +23,7 @@ export const FeaturedArticle = () => {
           </div>
         </div>
         <div className='space-y-2'>
-          <h2 className='text-3xl sm:text-4xl font-bold'>
+          <h2 className='text-2xl sm:text-4xl font-bold'>
             UX/UI Design Trends Going Into 2024
           </h2>
           <p className='line-clamp-3 md:text-lg text-muted-foreground font-light'>
@@ -36,8 +36,8 @@ export const FeaturedArticle = () => {
           </p>
         </div>
         <div className='flex items-center gap-2 sm:gap-4 text-muted-foreground'>
-          <div className='flex gap-2 items-center py-1.5 px-1.5 pr-3 bg-accent rounded-full hover:brightness-95 duration-300 cursor-pointer group'>
-            <Avatar className='h-8 w-8'>
+          <div className='flex gap-2 items-center py-1 px-1 pr-1.5 sm:py-1.5 sm:px-1.5 sm:pr-3 bg-accent rounded-full hover:brightness-95 duration-300 cursor-pointer group'>
+            <Avatar className='h-6 sm:h-8 w-6 sm:w-8'>
               <AvatarImage
                 className=' group-hover:scale-110 duration-200'
                 src='https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80'
@@ -59,7 +59,7 @@ export const FeaturedArticle = () => {
       </div>
       <div
         id='article_banner'
-        className='h-56 sm:h-64 w-full bg-accent relative'>
+        className='h-48 sm:h-64 w-full bg-accent relative'>
         <div className='absolute top-0 left-0 p-2'>
           <p className='font-medium text-sm flex items-center gap-2 text-amber-500/80 dark:text-amber-600/80 px-3 py-0.5 bg-amber-100/50 dark:bg-amber-900/40 rounded-full border border-amber-400/50 dark:border-amber-600/40'>
             Featured Article <HiSparkles />

@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={`${inter.className}`}>
-        <head>
+        {/* <head>
           <meta property='og:url' content='https://doqett.com/' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Doqett' />
@@ -64,7 +64,7 @@ export default function RootLayout({
             name='twitter:image'
             content='https://opengraph.b-cdn.net/production/documents/407715bc-1e7e-41f7-9178-02e53efd3f1f.png?token=wojW6IUG6N3Sv2lmraCECDz3eLaczY3j0u8OvKckf54&height=604&width=1200&expires=33246270970'
           />
-        </head>
+        </head> */}
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

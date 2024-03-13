@@ -7,10 +7,7 @@ import { PopularCommunities } from './sections/popular-communities';
 export const Homepage = () => {
   return (
     <>
-        <Hero />
-        <PopularBlogs/>
-        <PopularCourses/>
-        <PopularCommunities/>
+      <PopularBlogs />
     </>
   );
 };

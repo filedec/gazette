@@ -11,9 +11,10 @@ import {
   DropdownMenuTrigger,
   Input,
 } from '@/components/ui';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import { HamburgerMenuIcon, PlusIcon } from '@radix-ui/react-icons';
 import { ThemeSwitch } from '@/components/common';
 import { MobileLogo } from '@/assets/jsx/mobile-logo';
+import { HiPencilSquare } from 'react-icons/hi2';
 
 export function Header() {
   return (
@@ -31,8 +32,9 @@ export function Header() {
           <ThemeSwitch />
           <Link
             href={'/newsletter'}
-            className='whitespace-nowrap text-background select-none h-10 text-base hover:text-background/80 ease-in-out duration-200 border px-5 py-2 bg-primary hover:bg-primary/90 rounded-md'>
-            Join Waitlist
+            className='whitespace-nowrap flex items-center gap-2 text-background select-none h-10 text-base hover:text-background/80 ease-in-out duration-200 border px-5 py-2 bg-primary hover:bg-primary/90 rounded-md'>
+            <PlusIcon />
+            Create
           </Link>
         </div>
         <div className='flex lg:hidden'>
